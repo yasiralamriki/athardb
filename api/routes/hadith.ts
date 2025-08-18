@@ -4,7 +4,7 @@ import collections from '../utils/collections.ts'
 import hadith from '../utils/hadith.ts';
 
 // Express router
-const router = express.Router();
+const router: express.Router = express.Router();
 
 // Routes at /hadith
 // GET
@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
   if (req.query.collection) {
     if (req.query.hadith) {
       try {
-        const foundHadith = hadith.Find(req.query.collection, req.query.hadith);
+        const foundHadith = hadith.Find(req.query.collection as string, req.query.hadith as string);
 
         if (foundHadith !== false) {
           res.status(200).json({
@@ -31,7 +31,7 @@ router.get('/', (req, res) => {
       }
     } else {
       try {
-        const collection = collections.Find(req.query.collection);
+        const collection = collections.Find(req.query.collection as string);
 
         if (collection !== false) {
           res.status(200).json({

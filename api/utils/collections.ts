@@ -1,7 +1,7 @@
 import path from 'path';
 import fs from 'fs';
 
-function Find(collection) {
+function Find(collection: string) {
     try {
         // Read and parse collections.json
         const collectionsPath = path.join(process.cwd(), 'api/data/collections.json');

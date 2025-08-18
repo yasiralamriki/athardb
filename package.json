@@ -5,8 +5,8 @@
   "main": "api/index.ts",
   "type": "module",
   "scripts": {
-    "start": "node api/index.ts",
-    "dev": "node --watch api/index.ts"
+    "start": "jiti api/index.ts",
+    "dev": "jiti --watch api/index.ts"
   },
   "keywords": [],
   "author": "",

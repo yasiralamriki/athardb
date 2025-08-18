@@ -3,7 +3,7 @@ import express from 'express';
 import hadith from './routes/hadith.ts';
 
 // Express app
-const app = express();
+const app: express.Application = express();
 
 app.get('/', (req, res) =>
   res.status(200).json({
