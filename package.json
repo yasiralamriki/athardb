@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "jiti api/index.ts",
-    "dev": "jiti --watch api/index.ts"
+    "dev": "node --watch api/index.ts"
   },
   "keywords": [],
   "author": "",
