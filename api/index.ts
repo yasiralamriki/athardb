@@ -1,6 +1,6 @@
 // Imports
 import express from 'express';
-import hadith from './routes/hadith.ts';
+import hadith from './routes/hadith.js';
 
 // Express app
 const app: express.Application = express();
