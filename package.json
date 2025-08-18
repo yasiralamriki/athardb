@@ -1,8 +1,9 @@
 {
   "name": "athardb",
-  "version": "0.1.1",
+  "version": "0.2.2a",
   "description": "",
-  "main": "main.ts",
+  "main": "api/index.ts",
+  "type": "module",
   "scripts": {
     "start": "node api/index.ts",
     "dev": "node --watch api/index.ts"
