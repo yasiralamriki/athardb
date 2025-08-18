@@ -1,9 +1,24 @@
+// Imports
 import express from 'express';
-const app = express()
-const port = 3000
+import hadith from './routes/hadith.ts';
 
-app.get("/", (req, res) => res.send("Express on Vercel"));
+// Express app
+const app = express();
 
-app.listen(3000, () => console.log("Server ready on port 3000."));
+app.get('/', (req, res) =>
+  res.status(200).json({
+    message: 'Available routes:',
+    routes: [
+      '/hadith'
+    ]
+  })
+);
 
-module.exports = app;
+// Routes from /routes/*
+app.use('/hadith', hadith);
+
+// Listen on port 3000
+app.listen(3000, () => console.log('Server ready on port 3000.'));
+
+// Export app
+export default app;

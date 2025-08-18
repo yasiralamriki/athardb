@@ -1,0 +1,9 @@
+{
+    "collections": [
+        {
+            "id": 1,
+            "name": "al-Arbaʿīn al-Nawawiyyah",
+            "path": "api/data/hadith/alarbain.json"
+        }
+    ]
+}
