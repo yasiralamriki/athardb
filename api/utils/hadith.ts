@@ -1,6 +1,6 @@
 import path from 'path';
 import fs from 'fs';
-import collections from "./collections.ts";
+import collections from "./collections.js";
 
 interface Hadith {
     id: string | number;

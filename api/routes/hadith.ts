@@ -1,7 +1,7 @@
 // Imports
 import express from 'express';
-import collections from '../utils/collections.ts'
-import hadith from '../utils/hadith.ts';
+import collections from '../utils/collections.js'
+import hadith from '../utils/hadith.js';
 
 // Express router
 const router: express.Router = express.Router();
