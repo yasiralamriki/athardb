@@ -4,10 +4,11 @@
     "lib": ["ES2022"],
     "module": "ESNext",
     "moduleResolution": "Node",
-    "allowImportingTsExtensions": true,
+    "allowImportingTsExtensions": false,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "noEmit": false,
+    "outDir": "./dist",
     "strict": true,
     "exactOptionalPropertyTypes": true,
     "noImplicitReturns": true,
@@ -34,8 +35,7 @@
     "skipLibCheck": true
   },
   "include": [
-    "api/**/*",
-    "eslint.config.mts"
+    "api/**/*"
   ],
   "exclude": [
     "node_modules",

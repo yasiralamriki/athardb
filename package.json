@@ -5,8 +5,11 @@
   "main": "api/index.ts",
   "type": "module",
   "scripts": {
-    "start": "node api/index.ts",
-    "dev": "node --watch api/index.ts"
+    "build": "tsc",
+    "start": "node dist/api/index.js",
+    "dev": "node --watch --loader=jiti/esm api/index.ts",
+    "dev:build": "tsc --watch",
+    "clean": "rimraf dist"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +25,7 @@
     "eslint": "^9.33.0",
     "globals": "^16.3.0",
     "jiti": "^2.5.1",
+    "rimraf": "^6.0.1",
     "typescript-eslint": "^8.39.1"
   }
 }
